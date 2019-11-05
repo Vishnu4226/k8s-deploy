@@ -15,6 +15,8 @@ node {
     }
     stage("Deployment"){
         sh """
+        kubectl delete deploy assignment3
+        kubectl delete service assignment3
         kubectl create -f deployment.yml
         kubectl create -f service.yml
         """
