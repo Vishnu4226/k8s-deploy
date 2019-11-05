@@ -10,5 +10,15 @@ node {
         sh "docker --version"
         sh "docker build -t assignment2 ."
         sh "docker-compose up -d"
+        sh "docker tag assignment2:latest vishnu4772/assignment2"
+        sh "docker push vishnu4772/assignment2"
     }
+    stage("Deployment"){
+        sh """
+        kubectl create -f deployment.yml
+        kubectl create -f service.yml
+        """
+    }
+        
+        
 }
