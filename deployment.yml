@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: assignment3
+  labels:
+    app: assignment3
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: assignment3
+    spec:
+      containers:
+      - image: vishnu4772/assignment2
+        name: boxfuse
+        ports:
+        - containerPort: 8080
