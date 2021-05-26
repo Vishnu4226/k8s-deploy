@@ -1,4 +1,4 @@
-FROM tomcat:8.0-alpine
+FROM tomcat
 LABEL maintainer="gonuguntavishnu@gmail.com"
-#COPY **target**/hello-1.0.war /usr/local/tomcat/webapps
-#CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
+COPY ${{Build.ArtifactStagingDirectory}}/hello-1.0.war /usr/local/tomcat/webapps
+CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
