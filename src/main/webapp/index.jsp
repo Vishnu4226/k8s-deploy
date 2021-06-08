@@ -1,12 +1,12 @@
 <html>
 <head>
-    <title>Vishnu Reddy-Boxfuse Sample App: success!</title>
+    <title>Vishnu Reddy</title>
 </head>
 <body style="text-align: center">
 <h1>Congratulations!</h1>
 <img src="boxfuse.png">
 
-<h2>You have successfully launched your Instance!</h2>
+<h2>Vishnu Reddy Testing App</h2>
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
