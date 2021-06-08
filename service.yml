@@ -1,15 +1,15 @@
+---
 apiVersion: v1
 kind: Service
 metadata:
-  name: assignment3
-  labels:
-    app: assignment3
+  name: frontend
 spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: 8080
-    protocol: TCP
-    name: http
   selector:
-    app: assignment3
+    app: hello
+    tier: frontend
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 8080
+  type: LoadBalancer
+...
