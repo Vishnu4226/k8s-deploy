@@ -1,18 +1,25 @@
-apiVersion: extensions/v1beta1
+---
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assignment3
-  labels:
-    app: assignment3
+  name: frontend
 spec:
-  replicas: 3
+  selector:
+    matchLabels:
+      app: hello
+      tier: frontend
+      track: stable
+  replicas: 1
   template:
     metadata:
       labels:
-        app: assignment3
+        app: hello
+        tier: frontend
+        track: stable
     spec:
       containers:
-      - image: vishnu4772/assignment2
-        name: boxfuse
+      - name: boxfuse
+        image: vishnu4772/k8s-deploy:208
         ports:
         - containerPort: 8080
+...
