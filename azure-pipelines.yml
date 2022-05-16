@@ -7,7 +7,7 @@ trigger:
 - master
 pool:
   vmImage: ubuntu-latest
-- task: Maven@3
+  task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: false
