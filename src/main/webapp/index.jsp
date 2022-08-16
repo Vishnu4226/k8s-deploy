@@ -5,6 +5,6 @@
 <body style="text-align: center">
 <h1>Congratulations!</h1>
 
-<h2>Rajesh Chowdary!!!You Won Rs.100000/-</h2>
+<h2Dear PrathyuReddy I am extremly sorry, Love you nana!!!</h2>
 </body>
 </html>
