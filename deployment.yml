@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: boxfuse
-        image: vishnu4772/k8s-deploy:77
+        image: vishnu4772/k8s-deploy:78
         ports:
         - containerPort: 8080
 ...
