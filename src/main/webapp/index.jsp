@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Rajesh Chowdary</title>
+    <title>Java Application</title>
 </head>
 <body style="text-align: center">
 <h1>Congratulations!!!</h1> 
